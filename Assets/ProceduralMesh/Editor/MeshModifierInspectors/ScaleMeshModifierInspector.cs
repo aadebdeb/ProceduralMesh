@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [CustomEditor(typeof(ScaleMeshModifier))]
     public class ScaleMeshModifierInspector : MeshModifierInspector

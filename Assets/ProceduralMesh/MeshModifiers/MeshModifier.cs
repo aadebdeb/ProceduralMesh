@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [RequireComponent(typeof(MeshModifyApplier))]
     public abstract class MeshModifier : MonoBehaviour

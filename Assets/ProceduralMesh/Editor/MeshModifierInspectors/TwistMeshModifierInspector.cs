@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [CustomEditor(typeof(TwistMeshModifier))]
     public class TwistMeshModifierInspector : MeshModifierInspector

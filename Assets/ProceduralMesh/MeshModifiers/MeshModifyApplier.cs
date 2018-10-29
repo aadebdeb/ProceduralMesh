@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [ExecuteInEditMode, RequireComponent(typeof(MeshFilter))]
     public class MeshModifyApplier : MonoBehaviour

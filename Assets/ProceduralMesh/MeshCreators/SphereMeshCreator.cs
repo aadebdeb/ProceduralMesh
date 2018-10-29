@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [ExecuteInEditMode]
     public class SphereMeshCreator : MeshCreator

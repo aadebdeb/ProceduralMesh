@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     public abstract class MeshCreatorInspector : Editor
     {

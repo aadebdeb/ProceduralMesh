@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [CustomEditor(typeof(SphereMeshCreator))]
     public class SphereMeshCreatorInspector : MeshCreatorInspector

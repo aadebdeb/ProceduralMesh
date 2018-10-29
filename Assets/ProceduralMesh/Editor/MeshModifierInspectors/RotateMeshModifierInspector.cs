@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [CustomEditor(typeof(RotateMeshModifier))]
     public class RotateMeshModifierInspector : MeshModifierInspector

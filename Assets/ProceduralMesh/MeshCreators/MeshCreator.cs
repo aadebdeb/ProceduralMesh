@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [ExecuteInEditMode, RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
     public abstract class MeshCreator : MonoBehaviour

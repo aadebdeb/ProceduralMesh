@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [CustomEditor(typeof(TorusMeshCreator))]
     public class TorusMeshCreatorInspector : MeshCreatorInspector

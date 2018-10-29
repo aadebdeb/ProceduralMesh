@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [CustomPropertyDrawer(typeof(MoreThanAttribute))]
     public class MoreThanDrawer : PropertyDrawer
@@ -41,6 +41,26 @@ namespace ProceduralMesh
                 property.vector2IntValue = new Vector2Int(
                     propertyValue.x <= attributeValue.x ? attributeValue.x + 1 : propertyValue.x,
                     propertyValue.y <= attributeValue.y ? attributeValue.y + 1 : propertyValue.y
+                );
+            }
+            else if (property.propertyType == SerializedPropertyType.Vector3)
+            {
+                Vector3 attributeValue = moreThanAttribute.vector3Value;
+                Vector3 propertyValue = property.vector3Value;
+                property.vector3Value = new Vector3(
+                    propertyValue.x <= attributeValue.x ? attributeValue.x + Mathf.Epsilon : propertyValue.x,
+                    propertyValue.y <= attributeValue.y ? attributeValue.y + Mathf.Epsilon : propertyValue.y,
+                    propertyValue.z <= attributeValue.z ? attributeValue.z + Mathf.Epsilon : propertyValue.z
+                );
+            }
+            else if (property.propertyType == SerializedPropertyType.Vector3Int)
+            {
+                Vector3Int attributeValue = moreThanAttribute.vector3IntValue;
+                Vector3Int propertyValue = property.vector3IntValue;
+                property.vector3IntValue = new Vector3Int(
+                    propertyValue.x <= attributeValue.x ? attributeValue.x + 1 : propertyValue.x,
+                    propertyValue.y <= attributeValue.y ? attributeValue.y + 1 : propertyValue.y,
+                    propertyValue.z <= attributeValue.z ? attributeValue.z + 1 : propertyValue.z
                 );
             }
         }

@@ -2,8 +2,8 @@
 
 namespace ProceduralMeshSupport
 {
-    [CustomEditor(typeof(PlaneMeshCreator))]
-    public class PlaneMeshCreatorInspector : MeshCreatorInspector
+    [CustomEditor(typeof(IcosphereMeshCreator))]
+    public class IcosphereMeshCreatorInspector : MeshCreatorInspector
     {
         protected override void OnInspectorGUIInternal()
         {

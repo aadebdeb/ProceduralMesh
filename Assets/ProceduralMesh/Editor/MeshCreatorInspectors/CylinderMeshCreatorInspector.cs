@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     [CustomEditor(typeof(CylinderMeshCreator))]
     public class CylinderMeshCreatorInspector : MeshCreatorInspector

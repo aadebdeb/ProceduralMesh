@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ProceduralMesh
+namespace ProceduralMeshSupport
 {
     public class TransformMeshModifier : MeshModifier
     {
